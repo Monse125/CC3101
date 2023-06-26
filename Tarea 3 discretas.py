@@ -1,21 +1,15 @@
-archivo = open("prueba.txt", "r")  # Abre el archivo en modo lectura
-
-for linea in archivo:
-    print(linea)  # Procesa cada línea, por ejemplo, imprímela en la consola
-
-archivo.close()  # Cierra el archivo después de terminar de leerlo
 
 #Analiza un programa escrito en txt, asumiendo buena sintaxis,
 #imprimiendo caracteristicas basicas del programa en cuestión.
 # txt -> None
-def analizador(texto):
+def analizador():
     cfg = []
-    with open(str(texto),"r") as programa:
-      for linea in programa:
+    archivo = open("prueba.txt","r") # Abre el archivo en modo lectura
+    for linea in archivo:
         a = linea.split()
+        print(a)
         cfg.append(a)
     
-    print(prob)
     
     nodos = 1
     arcos = 1
@@ -25,9 +19,9 @@ def analizador(texto):
 
 
     print("CFG")
-    print("Nodos: " + str(nodos))
-    print("Arcos: " + str(arcos))
-    print("Componentes conexos: " + str(conexo))
+    print("Nodos: " + nodos)
+    print("Arcos: " + arcos)
+    print("Componentes conexos: " + conexo)
     print()
     print("Variables indefinidas")
     for var in var_ind:
@@ -39,4 +33,4 @@ def analizador(texto):
 
 
 #Ejemplo
-analizador(Prueba.txt)
+analizador()
