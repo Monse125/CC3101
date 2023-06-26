@@ -10,7 +10,7 @@ def analizador():
         print(a)
         cfg.append(a)
     
-    
+    print(cfg)
     nodos = 1
     arcos = 1
     conexo = 1
@@ -19,13 +19,13 @@ def analizador():
 
 
     print("CFG")
-    print("Nodos: " + nodos)
-    print("Arcos: " + arcos)
-    print("Componentes conexos: " + conexo)
+    print("Nodos: " + str(nodos))
+    print("Arcos: " + str(arcos))
+    print("Componentes conexos: " + str(conexo))
     print()
     print("Variables indefinidas")
     for var in var_ind:
-        print("Variable: " + var)
+        print("Variable: " + str(var)
         print("Camino: " ) #insertar camino
     print()
     print("Complejidad ciclomatica")
